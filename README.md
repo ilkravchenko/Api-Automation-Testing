@@ -52,7 +52,3 @@ or
 ```
 
 
-## Documentation
-
-[Documentation](https://linktodocumentation)
-
