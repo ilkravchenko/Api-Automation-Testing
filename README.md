@@ -25,7 +25,7 @@ Install dependencies
 
 ## Running Tests
 
-Before you will run the tests, you need to change input test data:
+**Before you will run the tests, you need to change input test data:**
 ```bash
   test_registration_data - 'YOUR_TOKEN', 'YOUR_LOGIN', 'YOUR_EMAIL', 'YOUR_PASSWORD'
   test_update_data - 'YOUR_TOKEN', 'YOUR_USER_TOKEN', 'YOUR_LOGIN', 'YOUR_NEW_EMAIL', 'YOUR_NEW_LOGIN'
