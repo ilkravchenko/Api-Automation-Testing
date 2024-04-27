@@ -13,7 +13,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd Automation
+  cd Api-Automation-Testing
 ```
 
 Install dependencies
