@@ -30,7 +30,7 @@ def test_registration(token, login, email, password, expected):
     assert response.status_code == expected
 
     headers = {"Authorization": f"Token token=\"{token}\"", 'User-Token': user_token}
-    login_url = f"https://favqs.com/api/users/{login}"
+    login_url = f"{url}{login}"
     response = requests.get(login_url, headers=headers)
 
     assert response.json()['login'] == login

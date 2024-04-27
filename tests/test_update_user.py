@@ -9,7 +9,8 @@ test_update_data = [
 
 @pytest.mark.parametrize("token,user_token,login,new_email,new_login,expected", test_update_data)
 def test_update_user(token, user_token, login, new_email, new_login, expected):
-    login_url = f"https://favqs.com/api/users/{login}"
+    url = 'https://favqs.com/api/users/'
+    login_url = f"{url}{login}"
     headers = {"Authorization": f"Token token=\"{token}\"", 'User-Token': user_token,
                "Content-Type": "application/json"}
 
@@ -26,7 +27,7 @@ def test_update_user(token, user_token, login, new_email, new_login, expected):
 
     assert response.status_code == expected
 
-    login_url = f"https://favqs.com/api/users/{new_login}"
+    login_url = f"{url}{new_login}"
     response = requests.get(login_url, headers=headers)
 
     assert response.json()['login'] == new_login
